@@ -1,4 +1,7 @@
-// import React from 'react';
+import React from 'react';
+import './NavBar.css'
+import NavCart from '../NavCart/NavCart';
+// import mueble from '../../Assets/img/mueblemodular.jpg'
 
 function NavBar() {
     return (
@@ -14,6 +17,7 @@ function NavBar() {
                             position: 'absolute', left: '50%', top: '50%',
                             transform: 'translate(-50%, -50%)',
                         }} >
+                            
                             <ul className=" nav "  >
                                 <li className="nav-item ">
                                     <a className="nav-link active text-secondary " aria-current="page" href="#">Inicio</a>
@@ -26,7 +30,7 @@ function NavBar() {
                                 </li>
                             </ul>
                         </div>
-
+                        
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -39,10 +43,15 @@ function NavBar() {
 
                         </div>
                     </div>
+                    
+                    <NavCart />
                 </nav>
             </header>
+            {/* <img className="modular" src = {mueble} alt = 'imagen'/> */}
+
         </>
     )
 
 }
+
 export default NavBar;

@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+.barra{
+  background-color: #F6D7A7;
+}
+h3{
+  color: #88aaaa;
+
+}
+h5{
+  margin: 10%;
+  color: rgb(95, 93, 93);
+}
+.menu{
+  padding-left: 246px;
+}
+.modular{
+  width: 20%;
+}

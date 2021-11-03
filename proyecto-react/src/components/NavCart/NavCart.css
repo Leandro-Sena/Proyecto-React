@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+.NavCart{
+    width: 5%;
+    font-size: 1.4rem;
+    cursor:pointer;
+    color: rgb(95, 93, 93);
+}
+span{
+    font-size: 1rem;
+}
