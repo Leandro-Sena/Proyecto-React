@@ -1,6 +1,8 @@
 import React from 'react';
 import './NavBar.css'
 import NavCart from '../NavCart/NavCart';
+import ItemListContainer from '../ItemListContainer/ItemListContainer';
+
 // import mueble from '../../Assets/img/mueblemodular.jpg'
 
 function NavBar() {
@@ -10,7 +12,7 @@ function NavBar() {
                 <nav className=" barra navbar navbar-expand-lg navbar-dark ">
                     <div className="container-fluid ">
 
-                        <a className="navbar-brand " href="#" ><h3>Los Sauces</h3><h5 >Muebleria</h5> </a>
+                        <a className="navbar-brand " href="inicio" ><h3>Los Sauces</h3><h5 >Muebleria</h5> </a>
 
 
                         <div  style={{
@@ -20,13 +22,13 @@ function NavBar() {
                             
                             <ul className=" nav "  >
                                 <li className="nav-item ">
-                                    <a className="nav-link active text-secondary " aria-current="page" href="#">Inicio</a>
+                                    <a className="nav-link active text-secondary " aria-current="page" href="inicio">Inicio</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link text-secondary" href="#">Productos</a>
+                                    <a className="nav-link text-secondary" href="productos">Productos</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link text-secondary" href="#">Home & Deco</a>
+                                    <a className="nav-link text-secondary" href="home&deco">Home&Deco</a>
                                 </li>
                             </ul>
                         </div>
@@ -46,10 +48,12 @@ function NavBar() {
                     
                     <NavCart />
                 </nav>
+
             </header>
-            {/* <img className="modular" src = {mueble} alt = 'imagen'/> */}
+            <ItemListContainer />
 
         </>
+        
     )
 
 }
