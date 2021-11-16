@@ -19,10 +19,10 @@ const Agregar = () => {
 }
 
     return(
-        <div>
-            <button  onClick = {decrement} style={{width:'5%'}}>-</button>
+        <div className='contador'>
+            <button  onClick = {decrement} style={{width:'10%'}}>-</button>
             {cantidad}
-            <button onClick = {increment} style={{width:'5%'}}>+</button>
+            <button onClick = {increment} style={{width:'10%'}}>+</button>
             
             <button onClick={Agregar}>Agregar</button>
     </div>

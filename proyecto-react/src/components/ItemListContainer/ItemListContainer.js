@@ -1,30 +1,26 @@
-import mueble from '../../Assets/img/mueblemodular.jpg'
-import ItemCount from '../ItemCount'
+import data from '../Data/products'
+import ItemList from '../ItemList/ItemList'
+import React, { useState } from 'react'
 
 
-function ItemListContainer() {
+const ItemListContainer = ({ name }) => {
+    const [item, setItems] = useState([])
+    const call = new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(data)
+        }, 2000)
+
+    })
+    call.then(result => {
+        setItems(result)
+    })
     return (
-        <>
-            <br />
-            <h4 className='text-center'>Productos</h4>
-            <br />
 
-            <div className="card" style={{
-                width: '18rem'
-            }}>
+        <div className="p-3 mb-8 text-dark tarjeta">
+            {name}
+            <ItemList items={item} />
 
-                <img src={mueble} className='modular' alt= 'imagen' style={{
-                    width: '100%'
-                }}/>
-
-
-                <div className="card-body">
-                    <p className="card-text">Modular, Mesa Tv, Biblioteca Melamina <br/> precio:$28.999</p>
-                </div>
-            </div>
-            <ItemCount stock={5} initial={1} />
-
-        </>
-    )
+        </div>)
 }
+
 export default ItemListContainer;

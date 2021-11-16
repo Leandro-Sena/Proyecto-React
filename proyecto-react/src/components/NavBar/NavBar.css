@@ -1,22 +1,35 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
-.barra{
-  background-color: #F6D7A7;
+  box-sizing: border-box;
 }
-h3{
+.barra {
+  background-color: #f6d7a7;
+}
+h3 {
   color: #88aaaa;
-
-
 }
-h5{
+h5 {
   margin: 10%;
   color: rgb(95, 93, 93);
 }
-.menu{
+.menu {
   padding-left: 246px;
 }
-.modular{
+/* .modular {
   width: 20%;
+} */
+.contador{
+  display: flex;
+  align-items: center;
 }
+.card{
+  margin: 3%;
+ 
+}
+.tarjeta {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+} 

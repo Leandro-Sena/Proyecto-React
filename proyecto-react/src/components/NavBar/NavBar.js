@@ -3,7 +3,6 @@ import './NavBar.css'
 import NavCart from '../NavCart/NavCart';
 import ItemListContainer from '../ItemListContainer/ItemListContainer';
 
-// import mueble from '../../Assets/img/mueblemodular.jpg'
 
 function NavBar() {
     return (
@@ -50,8 +49,11 @@ function NavBar() {
                 </nav>
 
             </header>
-            <ItemListContainer />
+            <br />
+            <h4 className='text-center text-dark'>Productos</h4>
+            <br />
 
+            <ItemListContainer />
         </>
         
     )
