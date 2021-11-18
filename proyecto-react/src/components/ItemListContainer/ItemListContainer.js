@@ -1,13 +1,14 @@
-import data from '../Data/products'
+// import data from '../Data/products'
 import ItemList from '../ItemList/ItemList'
 import React, { useState } from 'react'
+const {products} = require('../Data/products')
 
 
 const ItemListContainer = ({ name }) => {
     const [item, setItems] = useState([])
     const call = new Promise((resolve) => {
         setTimeout(() => {
-            resolve(data)
+            resolve(products)
         }, 2000)
 
     })
