@@ -2,17 +2,17 @@ import React from 'react'
 import Item from '../Item/Item'
 
 
-const ItemList = ({items}) =>{
+const ItemList = ({ items }) => {
     console.log(items);
-    return(
+    return (
     <>
     {
-        items.length>0
-       ? items.map(item=><Item key={item.id} data={item }/>)
+        items.length > 0
+       ? items.map(item => <Item key={item.id} data={item }/>)
        : <p>Cargando...</p>
     }
     
     </>
-    )
+    );
 }
 export default ItemList;

@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 const {products} = require('../Data/products')
 
 
-const ItemListContainer = ({ name }) => {
+const ItemListContainer = () => {
     const [item, setItems] = useState([])
     const call = new Promise((resolve) => {
         setTimeout(() => {
@@ -16,12 +16,9 @@ const ItemListContainer = ({ name }) => {
         setItems(result)
     })
     return (
+        <ItemList items={item} />
 
-        <div className="p-3 mb-8 text-dark tarjeta">
-            {name}
-            <ItemList items={item} />
-
-        </div>)
+    )
 }
 
 export default ItemListContainer;

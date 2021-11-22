@@ -7,9 +7,9 @@ const products= [
         description: 'BLANCA FRENTE CHOCOLATE MELAMINA',
         medidas: '1.20 x 60 cm',
         precio: 11000,
-        imagen: [
-            `${alacena}`
-        ]
+        imagen: 
+            {alacena}
+        
     },
     {
         id: 2,
@@ -33,7 +33,7 @@ const products= [
         description:'Negro con frente Blanco',
         medidas:'37 cm x 180 cm x 37 cm',
         precio: 22500,
-        imagen: ['https://http2.mlstatic.com/D_NQ_NP_2X_825686-MLA41248074155_032020-F.webp']
+        imagen: 'https://http2.mlstatic.com/D_NQ_NP_2X_825686-MLA41248074155_032020-F.webp'
     },
     {
         id: 5,
@@ -76,5 +76,4 @@ const products= [
         imagen: ['https://http2.mlstatic.com/D_NQ_NP_672689-MLA41988903395_052020-O.webp']
     },
 ]
-// export default products;
 export default products;
