@@ -1,11 +1,16 @@
 import React from 'react';
 import ItemCount from '../ItemCount'
 
-const ItemDetail = ({ item }) => {
+const ItemDetail = ({ item}) => {
+
+
+    console.log(item)
+
     return (
         <>
-            {
-                item.imagen
+           {    
+
+              item && item.imagen 
                     ?
                     <div className="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style={{
                         width: '18rem'
@@ -18,7 +23,6 @@ const ItemDetail = ({ item }) => {
                             <p className="card-text">{item.title} <br />
                                 Descripción: {item.description} <br /> precio: $ {item.precio} <br />
                                 medidas: {item.medidas} </p>
-
                             <ItemCount stock={5} initial={1} />
                         </div>
                     </div>
@@ -27,7 +31,7 @@ const ItemDetail = ({ item }) => {
 
             }
         </>
-
     )
+
 }
 export default ItemDetail;

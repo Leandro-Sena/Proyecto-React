@@ -1,24 +1,34 @@
-// import data from '../Data/products'
+import products from '../Data/products'
 import ItemList from '../ItemList/ItemList'
-import React, { useState } from 'react'
-const {products} = require('../Data/products')
+// import ItemCount from '../ItemCount'
+import customFetch from '../../customFetch'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router'
 
 
-const ItemListContainer = () => {
-    const [item, setItems] = useState([])
-    const call = new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(products)
-        }, 2000)
+const ItemDetailContainer = () => {
+    const [data, setData] = useState([]);
+    const { idCategory } = useParams();
+    console.log(idCategory)
+    useEffect(() => {
+        customFetch(2000, products.filter(item => {
+            if (idCategory === undefined)
+                return item;
+            return item.categoryId === parseInt(idCategory)
+        }))
+            .then(result => setData(result))
 
-    })
-    call.then(result => {
-        setItems(result)
-    })
+    }, [idCategory]);
+
     return (
-        <ItemList items={item} />
+        <div className="p-3 mb-8 text-dark tarjeta">
+            <ItemList items={data} />
+            {/* <ItemCount stock={5} initial={1} /> */}
 
-    )
+
+        </div>
+    );
+
 }
 
-export default ItemListContainer;
+export default ItemDetailContainer;

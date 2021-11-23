@@ -1,5 +1,6 @@
 import React from 'react';
 import './NavBar.css'
+import { Link } from "react-router-dom";
 import NavCart from '../NavCart/NavCart';
 
 
@@ -10,20 +11,22 @@ function NavBar() {
             <header>
                 <nav className=" barra navbar navbar-expand-lg navbar-dark ">
                     <div className="container-fluid ">
-                        <a className="navbar-brand " href="inicio" ><h3>Los Sauces</h3><h5 >Muebleria</h5> </a>
+                        <Link to='/' style={{ textDecoration: "none", color: "white" }}><h3>Los Sauces</h3><h5 >Muebleria</h5></Link>
                         <div style={{
                             position: 'absolute', left: '50%', top: '50%',
                             transform: 'translate(-50%, -50%)',
                         }} >
                             <ul className=" nav "  >
                                 <li className="nav-item ">
-                                    <a className="nav-link active text-secondary " aria-current="page" href="inicio">Inicio</a>
+                                    <Link to='/' style={{ textDecoration: "none", color: "black", margin: "-30%" }}>Inico</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link text-secondary" href="productos">Productos</a>
+                                    <Link to='/category/1' style={{ textDecoration: "none", color: "black", margin: "25%" }}> Produtos</Link>
+
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link text-secondary" href="home&deco">Home&Deco</a>
+                                    <Link to='/category/8' style={{ textDecoration: "none", color: "black", margin: "50%" }}>Home&Deco</Link>
+
                                 </li>
                             </ul>
                         </div>
@@ -48,7 +51,6 @@ function NavBar() {
             <br />
             <h4 className='text-center text-dark'>Productos</h4>
             <br />
-
         </>
 
     )
