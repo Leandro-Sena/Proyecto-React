@@ -1,7 +1,7 @@
-import {useState} from 'react';
+import {useState} from 'react'
+
 
 const ItemCount = (props) =>{
-
 const [cantidad, setCantidad] = useState(1)
 
 
@@ -15,7 +15,7 @@ const [cantidad, setCantidad] = useState(1)
         setCantidad(cantidad-1);
     } 
 const Agregar = () => {
-    console.log(`Agregaste ${cantidad} productos`)
+    alert(`Agregaste ${cantidad} productos`)
 }
 
     return(
