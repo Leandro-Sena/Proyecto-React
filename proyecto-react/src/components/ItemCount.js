@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useState, useEffect } from 'react'
 
 
@@ -13,27 +12,6 @@ console.log(onAdd)
     const increment = () => {
         if (cantidad < stock)
             setCantidad(cantidad + 1);
-=======
-import {useState} from 'react'
-
-
-const ItemCount = (props) =>{
-const [cantidad, setCantidad] = useState(1)
-
-
-    const increment = () => {
-        if(cantidad < props.stock) 
-        setCantidad (cantidad+1);
-        
-    } 
-    const decrement = () => {
-        if(cantidad > 1 )
-        setCantidad(cantidad-1);
-    } 
-const Agregar = () => {
-    alert(`Agregaste ${cantidad} productos`)
-}
->>>>>>> ffd1bda5f14d35d578f26192234cac284fcfb243
 
     }
     const decrement = () => {
