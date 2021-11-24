@@ -1,16 +1,21 @@
 import React from 'react';
+import { useState } from 'react'
+import { Link } from 'react-router-dom';
 import ItemCount from '../ItemCount'
 
-const ItemDetail = ({ item}) => {
-
-
+const ItemDetail = ({ item }) => {
+    const [itemCount, setItemCount] = useState(0);
+    const onAdd = (qty) => {
+        alert("Agregaste " + qty + " productos al 🛒");
+        setItemCount(qty);
+    }
     console.log(item)
 
     return (
         <>
-           {    
+            {
 
-              item && item.imagen 
+                item && item.imagen
                     ?
                     <div className="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style={{
                         width: '18rem'
@@ -23,7 +28,13 @@ const ItemDetail = ({ item}) => {
                             <p className="card-text">{item.title} <br />
                                 Descripción: {item.description} <br /> precio: $ {item.precio} <br />
                                 medidas: {item.medidas} </p>
-                            <ItemCount stock={5} initial={1} />
+                            {
+                                itemCount === 0
+
+                                    ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
+                                    : <Link to='/cart' style={{ textDecoration: "none" }}><button className='cart' >Ir a Carrito</button></Link>
+
+                            }
                         </div>
                     </div>
 

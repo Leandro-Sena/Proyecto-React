@@ -16,13 +16,10 @@ h5 {
 .menu {
   padding-left: 246px;
 }
-/* .modular {
-  width: 20%;
-} */
-.contador{
+/* .contador{
   display: flex;
   align-items: center;
-}
+} */
 .card{
   margin: 3%;
  
@@ -33,3 +30,50 @@ h5 {
   flex-wrap: wrap;
   justify-content: space-evenly;
 } 
+.contador{
+  font-size: 1.2em;
+  border:none;
+  border-radius: none;
+  background-color: transparent;
+  align-items: center;
+}
+.onAdd{
+  width: 100%;
+  background-color:#88aaaa;
+  color:black;
+  border-bottom: 100%;
+  border-color: black;
+  cursor: pointer;
+}
+.agregrar{
+  width: 100%;
+
+  color:rgb(63, 63, 63);
+  border-bottom: 100%;
+  border-color: rgb(63, 63, 63);
+  background-color: #848686;
+}
+.cart{
+  width: 100%;
+  background-color:#f3332cfa;
+  color:black;
+  border-bottom: 100%;
+  border-color: black;
+  cursor: pointer;
+}
+.card-body{
+  font-size: 1.1em;
+  text-align: center;
+}
+.buttonDetail{
+  color: rgba(9, 37, 37, 0.377);
+  
+}
+.detalle{
+  font-size: 1em;
+  text-align: center;
+
+}
+.detalle:hover {
+  transform: scale(1.4, 1.4);
+ }

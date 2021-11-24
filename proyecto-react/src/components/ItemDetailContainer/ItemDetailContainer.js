@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
         <div className="p-3 mb-8 text-dark tarjeta">
             <ItemDetail item={data} />
 
-        </div>
+ </div> 
     );
 
 }
