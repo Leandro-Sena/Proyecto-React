@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 
 const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
     const [cantidad, setCantidad] = useState(0)
-console.log(onAdd)
+// console.log(onAdd)
     useEffect(() => {
         setCantidad(initial)
     }, [initial])

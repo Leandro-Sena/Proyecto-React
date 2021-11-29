@@ -18,7 +18,7 @@ function NavBar() {
                         }} >
                             <ul className=" nav "  >
                                 <li className="nav-item ">
-                                    <Link to='/' style={{ textDecoration: "none", color: "black", margin: "-30%" }}>Inico</Link>
+                                    <Link to='/' style={{ textDecoration: "none", color: "black", margin: "-30%" }}>Inicio</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to='/category/1' style={{ textDecoration: "none", color: "black", margin: "25%" }}> Produtos</Link>
@@ -44,13 +44,13 @@ function NavBar() {
                         </div>
                     </div>
 
-                    <NavCart />
+                   <Link to='/cart' style={{ textDecoration: "none"}} ><NavCart /></Link>
                 </nav>
 
             </header>
-            <br />
+            {/* <br />
             <h4 className='text-center text-dark'>Productos</h4>
-            <br />
+            <br /> */}
         </>
 
     )

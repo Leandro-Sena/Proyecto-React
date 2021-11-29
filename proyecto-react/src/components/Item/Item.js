@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 const Item = ({ data }) => {
-    console.log(data)
+    // console.log(data)
     return (
         <>
             <div className="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style={{

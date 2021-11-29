@@ -3,11 +3,18 @@
     padding: 0;
     box-sizing: border-box; }
 .NavCart{
-    width: 5%;
+    width: 10%;
     font-size: 1.4rem;
+    position: relative;
+    /* bottom:-2em; */
+    right: 1em;
     cursor:pointer;
     color: rgb(95, 93, 93);
 }
 span{
+    color: rgb(95, 93, 93);
     font-size: 1rem;
+    position: relative;
+    bottom: -1.5em;
+    right: -1em;
 }

@@ -8,7 +8,7 @@ import { useParams } from 'react-router'
 const ItemDetailContainer = () => {
     const [data, setData] = useState([]);
     const { idCategory } = useParams();
-    console.log(idCategory)
+    // console.log(idCategory)
     useEffect(() => {
         customFetch(2000, products.filter(item => {
             if (idCategory === undefined)

@@ -77,3 +77,9 @@ h5 {
 .detalle:hover {
   transform: scale(1.4, 1.4);
  }
+ .cartDetail{
+   /* display: flex; */
+   position: relative;
+   bottom: 18em;
+   left: 310%;
+  }

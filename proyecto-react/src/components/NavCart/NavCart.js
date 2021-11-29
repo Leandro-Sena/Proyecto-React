@@ -6,9 +6,9 @@ import {BsCart4} from "react-icons/bs";
 const NavCart = () => { 
     return(
         <div className="NavCart">
-            
+            <span className= 'circulo'>2</span>
             <BsCart4 />
-            <span>0</span>
+            
 
         </div>
     )
