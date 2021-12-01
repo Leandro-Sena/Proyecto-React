@@ -12,6 +12,7 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         customFetch(2000, products.find(item => item.id === parseInt(idItem )))
             .then(result => setProductos(result))
+            .catch(err => console.log(err))
 
     }, [idItem]);
 

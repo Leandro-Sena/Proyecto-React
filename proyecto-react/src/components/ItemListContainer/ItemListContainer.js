@@ -8,7 +8,6 @@ import { useParams } from 'react-router'
 const ItemDetailContainer = () => {
     const [data, setData] = useState([]);
     const { idCategory } = useParams();
-    // console.log(idCategory)
     useEffect(() => {
         customFetch(2000, products.filter(item => {
             if (idCategory === undefined)
@@ -16,9 +15,9 @@ const ItemDetailContainer = () => {
             return item.categoryId === parseInt(idCategory)
         }))
             .then(result => setData(result))
+            .catch(err => console.log(err))
 
     }, [idCategory]);
-
     return (
         <div className="p-3 mb-8 text-dark tarjeta">
             <ItemList items={data} />

@@ -13,7 +13,6 @@ const ItemDetail = ({ item }) => {
         setItemCount(qty);
         test.addToCart(item, qty)
     }
-    // console.log(item)
 
     return (
         <>

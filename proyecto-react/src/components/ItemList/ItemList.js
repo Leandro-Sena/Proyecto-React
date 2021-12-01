@@ -3,7 +3,6 @@ import Item from '../Item/Item'
 
 
 const ItemList = ({ items }) => {
-    // console.log(items);
     return (
     <>
     {items.length ? (

@@ -16,11 +16,9 @@ h5 {
 .menu {
   padding-left: 246px;
 }
-/* .contador{
-  display: flex;
-  align-items: center;
-} */
 .card{
+  display: flex;
+  flex-direction: row;
   margin: 3%;
  
 }
@@ -78,8 +76,11 @@ h5 {
   transform: scale(1.4, 1.4);
  }
  .cartDetail{
-   /* display: flex; */
-   position: relative;
-   bottom: 18em;
-   left: 310%;
-  }
+  position: relative;
+  bottom: 17em;
+  left: 200%;
+ }
+.total{
+  border-right-style: solid;
+  border-left-style: solid;
+}
