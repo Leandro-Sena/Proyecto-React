@@ -120,14 +120,5 @@ const products= [
             id: 8
           },
     },
-    // {
-    //     id: 9,
-    //     title: 'Alacena',
-    //     description: 'BLANCA FRENTE CHOCOLATE MELAMINA',
-    //     medidas: '25 cm x 26 cm x 150 cm',
-    //     precio: 13340,
-    //     imagen: ['https://http2.mlstatic.com/D_NQ_NP_672689-MLA41988903395_052020-O.webp']
-    // },
 ]
-// export default products;
 export default products;

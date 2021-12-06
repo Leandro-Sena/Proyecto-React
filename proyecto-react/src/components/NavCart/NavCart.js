@@ -7,7 +7,7 @@ import { CartContext } from "../CartContext/CartContext";
 
 const NavCart = () => {
     const test = useContext(CartContext)
-    console.log(test)
+    // console.log(test)
     return (
         <div className="NavCart" >
             <span style={{ color: "white", backgroundColor: "black", borderRadius: "100%" }}>

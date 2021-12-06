@@ -48,9 +48,6 @@ function NavBar() {
                 </nav>
 
             </header>
-            {/* <br />
-            <h4 className='text-center text-dark'>Productos</h4>
-            <br /> */}
         </>
 
     )
