@@ -21,11 +21,11 @@ function NavBar() {
                                     <Link to='/' style={{ textDecoration: "none", color: "black", margin: "-30%" }}>Inicio</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to='/category/1' style={{ textDecoration: "none", color: "black", margin: "25%" }}> Produtos</Link>
+                                    <Link to='/category/CJeUqH9OYyNsBU89zxQW' style={{ textDecoration: "none", color: "black", margin: "25%" }}> Produtos</Link>
 
                                 </li>
                                 <li className="nav-item">
-                                    <Link to='/category/8' style={{ textDecoration: "none", color: "black", margin: "50%" }}>Home&Deco</Link>
+                                    <Link to='/category/7dLHe6Owz9BwvuDeDenK' style={{ textDecoration: "none", color: "black", margin: "50%" }}>Home&Deco</Link>
 
                                 </li>
                             </ul>

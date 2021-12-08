@@ -30,7 +30,7 @@ const ItemDetail = ({ item }) => {
                             }} /></div>
                         <div className="card-body">
                             <p className="card-text">{item.title} <br />
-                                Descripción: {item.description} <br /> precio: $ {item.precio} <br />
+                                Descripción: {item.description} <br />stock: {item.stock} <br />precio: $ {item.precio} <br />
                                 medidas: {item.medidas} </p>
                             {
                                 itemCount === 0
