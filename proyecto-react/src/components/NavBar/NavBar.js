@@ -18,22 +18,22 @@ function NavBar() {
                         }} >
                             <ul className=" nav "  >
                                 <li className="nav-item ">
-                                    <Link to='/' style={{ textDecoration: "none", color: "black", margin: "-30%" }}>Inicio</Link>
+                                    <Link to='/category/EBkwCh6Q2OP1BZwlRYc3' style={{ textDecoration: "none", color: "black", margin: "-30%" }}>Living</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to='/category/CJeUqH9OYyNsBU89zxQW' style={{ textDecoration: "none", color: "black", margin: "25%" }}> Produtos</Link>
+                                    <Link to='/category/7dLHe6Owz9BwvuDeDenK' style={{ textDecoration: "none", color: "black", margin: "25%" }}> Cocina</Link>
 
                                 </li>
                                 <li className="nav-item">
-                                    <Link to='/category/7dLHe6Owz9BwvuDeDenK' style={{ textDecoration: "none", color: "black", margin: "50%" }}>Home&Deco</Link>
+                                    <Link to='/category/CJeUqH9OYyNsBU89zxQW' style={{ textDecoration: "none", color: "black", margin: "50%" }}>Dormitorio</Link>
 
                                 </li>
                             </ul>
                         </div>
 
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
-                        </button>
+                        </button> */}
 
                         <ul className="navbar-nav">
                             <li className="nav-item dropdown">

@@ -11,7 +11,7 @@ const Item = ({ data }) => {
                     width: '100%'
                 }} />
                 <div className="card-body detalle ">
-                    <Link className="buttonDetail" to={`/item/${data.id}`} style={{ textDecoration: "none", margin: "30%", cursor: "pointer" }}>Detalles</Link>
+                    <Link className="buttonDetail" to={`/item/${data.id}`} style={{ textDecoration: "none", margin: "30%", cursor: "pointer" }}>Ver mas</Link>
                 </div>
             </div>
 
