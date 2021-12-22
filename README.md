@@ -24,8 +24,6 @@ _Que cosas necesitas para instalar el software y como instalarlas_
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
 * [bootstrap](https://getbootstrap.com/) - El framework web usado
 * [React js](https://es.reactjs.org/)
 * [JavaScript](https://www.javascript.com/)
